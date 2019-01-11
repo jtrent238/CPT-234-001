@@ -1,0 +1,21 @@
+MakeNSIS v3.04 - Copyright 1999-2018 Contributors
+See the file COPYING for license details.
+Credits can be found in the Users Manual.
+
+Processing config: C:\Program Files (x86)\NSIS\nsisconf.nsh
+Processing script file: "C:\Users\jtren\AppData\Local\Temp\zneA00B.tmp" (UTF16LE)
+
+Processed 1 file, writing output (x86-unicode):
+
+Output: "C:\Users\jtren\OneDrive\Desktop\VS 2017 - CPT 234 - New Project\VS 2017 - CPT 234 - New Project.exe"
+Install: 2 pages (128 bytes), 1 section (2072 bytes), 62 instructions (1736 bytes), 397 strings (2770 bytes), 1 language table (262 bytes).
+
+Using lzma compression.
+
+EXE header size:               50688 / 37888 bytes
+Install code:                   1422 / 7432 bytes
+Install data:                   7000 / 52430 bytes
+CRC (0xC3C7170E):                  4 / 4 bytes
+
+Total size:                    59114 / 97754 bytes (60.4%)
+(source ZIP size was 8213 bytes)
