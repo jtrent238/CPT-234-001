@@ -1,9 +1,8 @@
-// Programmer:		Your Name
-// Date:			Date
-// Program Name:	The name of the program
-// Chapter:			Chapter # - Chapter name
-// Description:		2 complete English sentences describing what the program does,
-//					algorithm used, etc.
+// Programmer:		Jonathan Trent Patterson
+// Date:			1/16/2019
+// Program Name:	Shapes with Asterisks
+// Chapter:			Chapter 1 - Chapter name
+// Description:		This program prints shapes. It also prints the word love.
 
 #define _CRT_SECURE_NO_WARNINGS // Disable warnings (and errors) when using non-secure versions of printf, scanf, strcpy, etc.
 #include <stdio.h> // Needed for working with printf and scanf
