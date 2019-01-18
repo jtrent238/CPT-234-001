@@ -1,2 +1,2 @@
 ﻿  main.cpp
-  VS 2017 - CPT 234 - Profit.vcxproj -> C:\Users\PK12101\Desktop\git\CPT-234-001\Projects\VS 2017 - CPT 234 - Profit\Debug\VS 2017 - CPT 234 - Profit.exe
+c:\users\pk12101\desktop\git\cpt-234-001\projects\vs 2017 - cpt 234 - profit\vs 2017 - cpt 234 - profit\main.cpp(21): warning C6031: Return value ignored: 'scanf'.
