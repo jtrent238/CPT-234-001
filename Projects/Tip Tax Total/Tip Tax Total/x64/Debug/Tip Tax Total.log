@@ -1,0 +1,4 @@
+﻿  TipTaxTotal.cpp
+c:\users\jtren\git\cpt-234-001\projects\tip tax total\tip tax total\tiptaxtotal.cpp(20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\jtren\git\cpt-234-001\projects\tip tax total\tip tax total\tiptaxtotal.cpp(21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Tip Tax Total.vcxproj -> C:\Users\jtren\git\CPT-234-001\Projects\Tip Tax Total\x64\Debug\Tip Tax Total.exe
