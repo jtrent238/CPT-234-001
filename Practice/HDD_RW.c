@@ -24,16 +24,16 @@ int main()
     printf("Enter the total host Writes in GiB for your hard drive: ");
         scanf("%lf", &hostWritesGiB);
     
-    hostReadsBit = hostReadsByte * DATA_SIZE;
-    hostReadsByte = hostReadsKiB * DATA_SIZE;
-    hostReadsKiB = hostReadsMiB * DATA_SIZE;
     hostReadsMiB = hostReadsGiB * DATA_SIZE;
+    hostReadsKiB = hostReadsMiB * DATA_SIZE;
+    hostReadsByte = hostReadsKiB * DATA_SIZE;
+    hostReadsBit = hostReadsByte * DATA_SIZE;
     hostReadsTiB = hostReadsGiB / DATA_SIZE;
     
-    hostWritesBit = hostWritesByte * DATA_SIZE;
-    hostWritesByte = hostWritesKiB * DATA_SIZE;
-    hostWritesKiB = hostWritesMiB * DATA_SIZE;
     hostWritesMiB = hostWritesGiB * DATA_SIZE;
+    hostWritesKiB = hostWritesMiB * DATA_SIZE;
+    hostWritesByte = hostWritesKiB * DATA_SIZE;
+    hostWritesBit = hostWritesByte * DATA_SIZE;
     hostWritesTiB = hostWritesGiB / DATA_SIZE;
     
     
@@ -70,9 +70,5 @@ int main()
     
     printf("\n"); //blank line
     
-    printf("NOTE: Kilobytes and below may end up being zero because it is to high of a number.");
-    
     return 0;
 }
-
-
