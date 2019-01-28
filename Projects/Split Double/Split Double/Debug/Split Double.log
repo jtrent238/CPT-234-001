@@ -1,0 +1,3 @@
+﻿  SplitDouble.cpp
+c:\users\pk12101\desktop\git\cpt-234-001\projects\split double\split double\splitdouble.cpp(30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Split Double.vcxproj -> C:\Users\PK12101\Desktop\git\CPT-234-001\Projects\Split Double\Debug\Split Double.exe
