@@ -1,0 +1,7 @@
+﻿  How Many.cpp
+c:\users\jtren\git\cpt-234-001\projects\how many\how many\how many.cpp(37): warning C4474: 'printf' : too many arguments passed for format string
+  c:\users\jtren\git\cpt-234-001\projects\how many\how many\how many.cpp(37): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\jtren\git\cpt-234-001\projects\how many\how many\how many.cpp(44): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\jtren\git\cpt-234-001\projects\how many\how many\how many.cpp(45): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\jtren\git\cpt-234-001\projects\how many\how many\how many.cpp(46): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  How Many.vcxproj -> C:\Users\jtren\git\CPT-234-001\Projects\How Many\Debug\How Many.exe
