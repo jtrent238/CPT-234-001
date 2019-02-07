@@ -1,12 +1,13 @@
-// Programmer:		Your Name
-// Date:			Date
-// Program Name:	The name of the program
-// Chapter:			Chapter # - Chapter name
-// Description:		2 complete English sentences describing what the program does,
-//					algorithm used, etc.
+// Programmer:		Jonathan Trent Patterson
+// Date:			2/6/2019
+// Program Name:	Roman Numerals
+// Chapter:			Chapter 3 - Decisions
+// Description:		This program get a number between 1 and 10 from user and converts it to a roman numral.
+
 
 #define _CRT_SECURE_NO_WARNINGS // Disable warnings (and errors) when using non-secure versions of printf, scanf, strcpy, etc.
 #include <stdio.h> // Needed for working with printf and scanf
+#include <string.h> // Needed for working with strcpy
 
 int main(void)
 {
@@ -15,7 +16,7 @@ int main(void)
 	const int MIN_NUM = 1;
 	const int MAX_NUM = 10;
 	int userNum = 0;
-	char romanNum[1];
+	char romanNum[5];
 
 	// *** Your program goes here ***
 
@@ -68,10 +69,15 @@ int main(void)
 			break;
 
 		}
+
+		printf("The number entered, %d, in Roman numerals is %s.", userNum, romanNum);
+
 	}
 	else {
 		printf("The number entered, %d, is not in the range of %d to %d.", userNum, MIN_NUM, MAX_NUM);
 	}
+
+	printf("\n"); //blank line
 
 	return 0;
 } // end main()

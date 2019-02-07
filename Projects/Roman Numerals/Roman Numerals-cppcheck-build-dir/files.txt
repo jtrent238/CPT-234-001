@@ -1,0 +1,4 @@
+Roman Numerals.a1:Debug|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Roman Numerals/Roman Numerals/Roman Numerals.cpp
+Roman Numerals.a2:Release|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Roman Numerals/Roman Numerals/Roman Numerals.cpp
+Roman Numerals.a3:Debug|x64:C:/Users/jtren/git/CPT-234-001/Projects/Roman Numerals/Roman Numerals/Roman Numerals.cpp
+Roman Numerals.a4:Release|x64:C:/Users/jtren/git/CPT-234-001/Projects/Roman Numerals/Roman Numerals/Roman Numerals.cpp

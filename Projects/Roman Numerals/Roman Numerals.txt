@@ -1,0 +1,1 @@
+[Roman Numerals\Roman Numerals.cpp:19]: (style) The scope of the variable 'romanNum' can be reduced.
