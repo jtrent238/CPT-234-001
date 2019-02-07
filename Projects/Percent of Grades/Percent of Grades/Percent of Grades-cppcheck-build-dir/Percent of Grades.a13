@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="866210929">
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;percentDrop&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;percentDrop&apos; is reassigned a value before the old one has been used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="73"/>
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="31"/>
+            <symbol>percentDrop</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;percentWithdraw&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;percentWithdraw&apos; is reassigned a value before the old one has been used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="74"/>
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="32"/>
+            <symbol>percentWithdraw</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;percentA&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;percentA&apos; is reassigned a value before the old one has been used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="75"/>
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="33"/>
+            <symbol>percentA</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;percentB&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;percentB&apos; is reassigned a value before the old one has been used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="76"/>
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="34"/>
+            <symbol>percentB</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;percentC&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;percentC&apos; is reassigned a value before the old one has been used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="77"/>
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="35"/>
+            <symbol>percentC</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;percentD&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;percentD&apos; is reassigned a value before the old one has been used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="78"/>
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="36"/>
+            <symbol>percentD</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;percentF&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;percentF&apos; is reassigned a value before the old one has been used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="79"/>
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="37"/>
+            <symbol>percentF</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;percentFFA&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;percentFFA&apos; is reassigned a value before the old one has been used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="80"/>
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="38"/>
+            <symbol>percentFFA</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;percentWithdraw&apos; is assigned a value that is never used." verbose="Variable &apos;percentWithdraw&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="74"/>
+            <symbol>percentWithdraw</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;percentD&apos; is assigned a value that is never used." verbose="Variable &apos;percentD&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="78"/>
+            <symbol>percentD</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;percentFFA&apos; is assigned a value that is never used." verbose="Variable &apos;percentFFA&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Percent of Grades\Percent of Grades\Percent of Grades.cpp" line="80"/>
+            <symbol>percentFFA</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="11"/>
+    <functioncall functionName="numAbs"/>
+    <functioncall functionName="numDropped"/>
+    <functioncall functionName="numGradeA"/>
+    <functioncall functionName="numGradeB"/>
+    <functioncall functionName="numGradeC"/>
+    <functioncall functionName="numGradeD"/>
+    <functioncall functionName="numGradeF"/>
+    <functioncall functionName="numWithdraw"/>
+    <functioncall functionName="percentA"/>
+    <functioncall functionName="percentB"/>
+    <functioncall functionName="percentC"/>
+    <functioncall functionName="percentDrop"/>
+    <functioncall functionName="percentF"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="scanf"/>
+    <functioncall functionName="totalLeft"/>
+    <functioncall functionName="totalRegistered"/>
+    <functioncall functionName="totalRegisteredEnd"/>
+  </FileInfo>
+</analyzerinfo>

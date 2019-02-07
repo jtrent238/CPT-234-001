@@ -1,0 +1,16 @@
+Percent of Grades.a1:a7n3cy|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a2:a7n3cy|x64:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a3:ac76ew|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a4:ac76ew|x64:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a5:Debug|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a6:Dummy|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a7:Dummy|x64:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a8:iuyads|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a9:iuyads|x64:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a10:jtrent238|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a11:jtrent238|x64:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a12:Publish|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a13:Publish|x64:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a14:Release|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a15:Debug|x64:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp
+Percent of Grades.a16:Release|x64:C:/Users/jtren/git/CPT-234-001/Projects/Percent of Grades/Percent of Grades/Percent of Grades.cpp

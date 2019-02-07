@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.84"/>
+    <errors>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;percentDrop&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;percentDrop&amp;#039; is reassigned a value before the old one has been used." sinceDate="2/6/2019">
+            <location file="Percent of Grades.cpp" line="73" info=""/>
+            <location file="Percent of Grades.cpp" line="31" info=""/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;percentWithdraw&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;percentWithdraw&amp;#039; is reassigned a value before the old one has been used." sinceDate="2/6/2019">
+            <location file="Percent of Grades.cpp" line="74" info=""/>
+            <location file="Percent of Grades.cpp" line="32" info=""/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;percentA&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;percentA&amp;#039; is reassigned a value before the old one has been used." sinceDate="2/6/2019">
+            <location file="Percent of Grades.cpp" line="75" info=""/>
+            <location file="Percent of Grades.cpp" line="33" info=""/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;percentB&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;percentB&amp;#039; is reassigned a value before the old one has been used." sinceDate="2/6/2019">
+            <location file="Percent of Grades.cpp" line="76" info=""/>
+            <location file="Percent of Grades.cpp" line="34" info=""/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;percentC&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;percentC&amp;#039; is reassigned a value before the old one has been used." sinceDate="2/6/2019">
+            <location file="Percent of Grades.cpp" line="77" info=""/>
+            <location file="Percent of Grades.cpp" line="35" info=""/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;percentD&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;percentD&amp;#039; is reassigned a value before the old one has been used." sinceDate="2/6/2019">
+            <location file="Percent of Grades.cpp" line="78" info=""/>
+            <location file="Percent of Grades.cpp" line="36" info=""/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;percentF&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;percentF&amp;#039; is reassigned a value before the old one has been used." sinceDate="2/6/2019">
+            <location file="Percent of Grades.cpp" line="79" info=""/>
+            <location file="Percent of Grades.cpp" line="37" info=""/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;percentFFA&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;percentFFA&amp;#039; is reassigned a value before the old one has been used." sinceDate="2/6/2019">
+            <location file="Percent of Grades.cpp" line="80" info=""/>
+            <location file="Percent of Grades.cpp" line="38" info=""/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;percentWithdraw&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;percentWithdraw&amp;#039; is assigned a value that is never used." sinceDate="2/6/2019">
+            <location file="Percent of Grades.cpp" line="74"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;percentD&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;percentD&amp;#039; is assigned a value that is never used." sinceDate="2/6/2019">
+            <location file="Percent of Grades.cpp" line="78"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;percentFFA&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;percentFFA&amp;#039; is assigned a value that is never used." sinceDate="2/6/2019">
+            <location file="Percent of Grades.cpp" line="80"/>
+        </error>
+    </errors>
+</results>
