@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.84"/>
+    <errors>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;yourBMI&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;yourBMI&amp;#039; is reassigned a value before the old one has been used." sinceDate="2/8/2019">
+            <location file="BMI (Body Mass Index)\BMI (Body Mass Index).cpp" line="23" info=""/>
+            <location file="BMI (Body Mass Index)\BMI (Body Mass Index).cpp" line="42" info=""/>
+        </error>
+    </errors>
+</results>

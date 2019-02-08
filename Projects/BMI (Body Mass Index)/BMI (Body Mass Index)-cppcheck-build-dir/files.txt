@@ -1,0 +1,4 @@
+BMI (Body Mass Index).a1:Debug|Win32:E:/git/CPT-234-001/Projects/BMI (Body Mass Index)/BMI (Body Mass Index)/BMI (Body Mass Index).cpp
+BMI (Body Mass Index).a2:Release|Win32:E:/git/CPT-234-001/Projects/BMI (Body Mass Index)/BMI (Body Mass Index)/BMI (Body Mass Index).cpp
+BMI (Body Mass Index).a3:Debug|x64:E:/git/CPT-234-001/Projects/BMI (Body Mass Index)/BMI (Body Mass Index)/BMI (Body Mass Index).cpp
+BMI (Body Mass Index).a4:Release|x64:E:/git/CPT-234-001/Projects/BMI (Body Mass Index)/BMI (Body Mass Index)/BMI (Body Mass Index).cpp

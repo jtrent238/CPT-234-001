@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1651233512">
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;yourBMI&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;yourBMI&apos; is reassigned a value before the old one has been used." cwe="563">
+            <location file0="E:\git\CPT-234-001\Projects\BMI (Body Mass Index)\BMI (Body Mass Index)\BMI (Body Mass Index).cpp" file="E:\git\CPT-234-001\Projects\BMI (Body Mass Index)\BMI (Body Mass Index)\BMI (Body Mass Index).cpp" line="42"/>
+            <location file0="E:\git\CPT-234-001\Projects\BMI (Body Mass Index)\BMI (Body Mass Index)\BMI (Body Mass Index).cpp" file="E:\git\CPT-234-001\Projects\BMI (Body Mass Index)\BMI (Body Mass Index)\BMI (Body Mass Index).cpp" line="23"/>
+            <symbol>yourBMI</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="12"/>
+    <functioncall functionName="MAX_HEIGHT"/>
+    <functioncall functionName="MAX_WEIGHT"/>
+    <functioncall functionName="MIN_HEIGHT"/>
+    <functioncall functionName="MIN_WEIGHT"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="pow"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="scanf"/>
+    <functioncall functionName="userHeight"/>
+    <functioncall functionName="userWeight"/>
+    <functioncall functionName="yourBMI"/>
+  </FileInfo>
+</analyzerinfo>
