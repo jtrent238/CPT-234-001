@@ -1,22 +1,24 @@
 <?xml version="1.0"?>
-<analyzerinfo checksum="3893522751">
-        <error id="redundantAssignment" severity="style" msg="Variable &apos;yourBMI&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;yourBMI&apos; is reassigned a value before the old one has been used." cwe="563">
-            <location file0="E:\git\CPT-234-001\Projects\BMI (Body Mass Index)\BMI (Body Mass Index)\BMI (Body Mass Index).cpp" file="E:\git\CPT-234-001\Projects\BMI (Body Mass Index)\BMI (Body Mass Index)\BMI (Body Mass Index).cpp" line="42"/>
-            <location file0="E:\git\CPT-234-001\Projects\BMI (Body Mass Index)\BMI (Body Mass Index)\BMI (Body Mass Index).cpp" file="E:\git\CPT-234-001\Projects\BMI (Body Mass Index)\BMI (Body Mass Index)\BMI (Body Mass Index).cpp" line="23"/>
-            <symbol>yourBMI</symbol>
+<analyzerinfo checksum="2776611686">
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;userBMI&apos; can be reduced." verbose="The scope of the variable &apos;userBMI&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\BMI (Body Mass Index)\BMI (Body Mass Index)\BMI (Body Mass Index).cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\BMI (Body Mass Index)\BMI (Body Mass Index)\BMI (Body Mass Index).cpp" line="17"/>
+            <symbol>userBMI</symbol>
         </error>
   <FileInfo check="CheckUnusedFunctions">
     <functiondecl functionName="main" lineNumber="12"/>
+    <functioncall functionName="BMI_MULTIPLIER"/>
     <functioncall functionName="MAX_HEIGHT"/>
     <functioncall functionName="MAX_WEIGHT"/>
     <functioncall functionName="MIN_HEIGHT"/>
     <functioncall functionName="MIN_WEIGHT"/>
+    <functioncall functionName="SQUARED_NUM"/>
+    <functioncall functionName="double"/>
     <functioncall functionName="if"/>
     <functioncall functionName="pow"/>
     <functioncall functionName="printf"/>
     <functioncall functionName="scanf"/>
+    <functioncall functionName="userBMI"/>
     <functioncall functionName="userHeight"/>
     <functioncall functionName="userWeight"/>
-    <functioncall functionName="yourBMI"/>
   </FileInfo>
 </analyzerinfo>

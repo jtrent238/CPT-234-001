@@ -2,9 +2,8 @@
 <results version="2">
     <cppcheck version="1.84"/>
     <errors>
-        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;yourBMI&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;yourBMI&amp;#039; is reassigned a value before the old one has been used." sinceDate="2/8/2019">
-            <location file="BMI (Body Mass Index)\BMI (Body Mass Index).cpp" line="23" info=""/>
-            <location file="BMI (Body Mass Index)\BMI (Body Mass Index).cpp" line="42" info=""/>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;userBMI&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;userBMI&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="2/9/2019">
+            <location file="BMI (Body Mass Index)\BMI (Body Mass Index).cpp" line="17"/>
         </error>
     </errors>
 </results>
