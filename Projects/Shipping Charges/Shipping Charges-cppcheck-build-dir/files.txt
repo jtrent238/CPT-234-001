@@ -1,0 +1,4 @@
+Shipping Charges.a1:Debug|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Shipping Charges/Shipping Charges/Shipping Charges.cpp
+Shipping Charges.a2:Release|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Shipping Charges/Shipping Charges/Shipping Charges.cpp
+Shipping Charges.a3:Debug|x64:C:/Users/jtren/git/CPT-234-001/Projects/Shipping Charges/Shipping Charges/Shipping Charges.cpp
+Shipping Charges.a4:Release|x64:C:/Users/jtren/git/CPT-234-001/Projects/Shipping Charges/Shipping Charges/Shipping Charges.cpp
