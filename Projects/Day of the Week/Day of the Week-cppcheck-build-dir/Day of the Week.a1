@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3999475089">
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;isLeapYear&apos; can be reduced." verbose="The scope of the variable &apos;isLeapYear&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="19"/>
+            <symbol>isLeapYear</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;daysFebuary&apos; can be reduced." verbose="The scope of the variable &apos;daysFebuary&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="26"/>
+            <symbol>daysFebuary</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;numDaysMonth&apos; is assigned a value that is never used." verbose="Variable &apos;numDaysMonth&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="20"/>
+            <symbol>numDaysMonth</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;dayOfWeek&apos; is assigned a value that is never used." verbose="Variable &apos;dayOfWeek&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="21"/>
+            <symbol>dayOfWeek</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;daysFebuary&apos; is assigned a value that is never used." verbose="Variable &apos;daysFebuary&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="85"/>
+            <symbol>daysFebuary</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;MONTH_JANUARY&apos; is assigned a value that is never used." verbose="Variable &apos;MONTH_JANUARY&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="37"/>
+            <symbol>MONTH_JANUARY</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;MONTH_FEBUARY&apos; is assigned a value that is never used." verbose="Variable &apos;MONTH_FEBUARY&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="38"/>
+            <symbol>MONTH_FEBUARY</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;MONTH_MARCH&apos; is assigned a value that is never used." verbose="Variable &apos;MONTH_MARCH&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="39"/>
+            <symbol>MONTH_MARCH</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;MONTH_APRIL&apos; is assigned a value that is never used." verbose="Variable &apos;MONTH_APRIL&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="40"/>
+            <symbol>MONTH_APRIL</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;MONTH_MAY&apos; is assigned a value that is never used." verbose="Variable &apos;MONTH_MAY&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="41"/>
+            <symbol>MONTH_MAY</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;MONTH_JUNE&apos; is assigned a value that is never used." verbose="Variable &apos;MONTH_JUNE&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="42"/>
+            <symbol>MONTH_JUNE</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;MONTH_JULY&apos; is assigned a value that is never used." verbose="Variable &apos;MONTH_JULY&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="43"/>
+            <symbol>MONTH_JULY</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;MONTH_AUGEST&apos; is assigned a value that is never used." verbose="Variable &apos;MONTH_AUGEST&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="44"/>
+            <symbol>MONTH_AUGEST</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;MONTH_SEPTEMBER&apos; is assigned a value that is never used." verbose="Variable &apos;MONTH_SEPTEMBER&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="45"/>
+            <symbol>MONTH_SEPTEMBER</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;MONTH_OCTOBER&apos; is assigned a value that is never used." verbose="Variable &apos;MONTH_OCTOBER&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="46"/>
+            <symbol>MONTH_OCTOBER</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;MONTH_NOVEMBER&apos; is assigned a value that is never used." verbose="Variable &apos;MONTH_NOVEMBER&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="47"/>
+            <symbol>MONTH_NOVEMBER</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;MONTH_DECEMBER&apos; is assigned a value that is never used." verbose="Variable &apos;MONTH_DECEMBER&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="48"/>
+            <symbol>MONTH_DECEMBER</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: isLeapYear" verbose="Uninitialized variable: isLeapYear" cwe="908">
+            <location file0="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" file="C:\Users\jtren\git\CPT-234-001\Projects\Day of The Week\Day of The Week\Day of the Week.cpp" line="84"/>
+            <symbol>isLeapYear</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="15"/>
+    <functioncall functionName="INVALID_YEAR"/>
+    <functioncall functionName="MAX_DAYS"/>
+    <functioncall functionName="MAX_MONTHS"/>
+    <functioncall functionName="MIN_DAYS"/>
+    <functioncall functionName="MIN_MONTHS"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="scanf"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="userDay"/>
+    <functioncall functionName="userMonth"/>
+    <functioncall functionName="userYear"/>
+  </FileInfo>
+</analyzerinfo>

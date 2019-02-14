@@ -50,54 +50,43 @@ int main(void)
 	// *** Your program goes here ***
 
 	printf("Enter a year (after 1582): ");
-	scanf("%d", &userYear);
+	scanf("%d", userYear);
+	if (userYear >= INVALID_YEAR) {
+		printf("The year entered was not after %d.", INVALID_YEAR);
+	}
 
-	 if (userYear < 1582) {
-		 printf("The year entered was not after %d.", INVALID_YEAR);
-	 } 
-	 else {
-		 printf("Enter a month (%d-%d): ", MIN_MONTHS, MAX_MONTHS);
-		 scanf("%d", &userMonth);
-			if (userMonth < MIN_MONTHS || userMonth > MAX_MONTHS) {
-				printf("The month entered was not between %d and %d inclusive.", MIN_MONTHS, MAX_MONTHS);
-			} 
-			else {
-				printf("Enter a day (%d-%d): ", MIN_DAYS, MAX_DAYS);
-				scanf("%d", &userDay);
-				if (userDay < MIN_DAYS || userDay > MAX_DAYS) {
-					printf("The day entered was not between %d and %d inclusive.", MIN_DAYS, MAX_DAYS);
-				}
-				else {
-					//Determine if it is a leap year
 
-					if (userYear % 400 == 0) {
-						isLeapYear = true;
-					}
-					else if (userYear % 100 == 0) {
-						isLeapYear = false;
-					}
-					else if (userYear % 4 == 0) {
-						isLeapYear = true;
-					}
-					else {}
 
-					if (isLeapYear == true) {
-						daysFebuary = daysFebuary + 1; //if it is a leap year add 1 day to febuary
-					}
-					else {
-						//conunie here
-					}
-				}
-			}
-	 }
-
-	 
-
-/*
 	printf("%d", userDay + 2 * userMonth + (int)(.6 *(userMonth + 1)) + userYear + (userYear / 4) - (userYear / 100) + (userYear / 400) + 2);
 
-	*/
+	if (userYear % 400 == 0) {
+		isLeapYear = true;
+	}
+	else if (userYear % 100 == 0) {
+		isLeapYear = false;
+	}
+	else if (userYear % 4 == 0) {
+		isLeapYear = true;
+	}
+	else {}
 
+	if (isLeapYear == true) {
+		daysFebuary = daysFebuary + 1;
+	}
+	else {
+
+	}
+	/*
+	printf("Enter a month (%d-%d): ", MIN_MONTHS, MAX_MONTHS);
+	scanf("%d", userMonth);
+	if (userMonth >= MIN_MONTHS && userMonth <= MAX_MONTHS) {
+	printf("Enter the day (%d-%d):", MIN_DAYS, MAX_DAYS);
+	scanf("%d", userDay);
+	if (userDay > numDaysMonth && userDay <= numDaysMonth) {
+	printf("The day of the week was %s.", dayOfWeek);
+	}
+	}
+	*/
 	printf("\n"); //blank line 
 
 	return 0;

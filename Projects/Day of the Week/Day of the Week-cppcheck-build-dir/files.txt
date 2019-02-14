@@ -1,0 +1,4 @@
+Day of the Week.a1:Debug|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Day of The Week/Day of The Week/Day of the Week.cpp
+Day of the Week.a2:Release|Win32:C:/Users/jtren/git/CPT-234-001/Projects/Day of The Week/Day of The Week/Day of the Week.cpp
+Day of the Week.a3:Debug|x64:C:/Users/jtren/git/CPT-234-001/Projects/Day of The Week/Day of The Week/Day of the Week.cpp
+Day of the Week.a4:Release|x64:C:/Users/jtren/git/CPT-234-001/Projects/Day of The Week/Day of The Week/Day of the Week.cpp
