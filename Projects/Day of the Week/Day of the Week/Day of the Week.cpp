@@ -19,11 +19,12 @@ int main(void)
 	bool isLeapYear;
 	int numDaysMonth = 31;
 	char dayOfWeek[10] = "";
-
+	
 	int userYear = 0;
 	int userMonth = 0;
 	int userDay = 0;
 	int daysFebuary = 28;
+	int myDayofWeek = 0;
 
 	//formulaDayOfWeek = D + 2 * M + (int)(.6 * (M + 1)) + Y + (Y / 4) - (Y / 100) + (Y / 400) + 2 ;
 
@@ -48,6 +49,24 @@ int main(void)
 	const int MONTH_DECEMBER = 12;
 
 	// *** Your program goes here ***
+
+
+	enum days {
+		DAYS_JANUARY = 31,
+		DAYS_FEBUARY = 28,
+		DAYS_FEBUARY_LEAP = 29,
+		DAYS_MARCH = 31,
+		DAYS_APRIL = 30,
+		DAYS_MAY = 0,
+		DAYS_JUNE = 0,
+		DAYS_JULY = 0,
+		DAYS_AUGEST = 0,
+		DAYS_SEPTEMBER = 0,
+		DAYS_OCTOBER = 0,
+		DAYS_NOVEMBER = 0,
+		DAYS_DECEMBER = 0
+	};
+
 
 	printf("Enter a year (after 1582): ");
 	scanf("%d", &userYear);
@@ -92,7 +111,11 @@ int main(void)
 	 }
 
 	 
+	 myDayofWeek = userDay + 2 * userMonth + (int)(.6 *(userMonth + 1)) + userYear + (userYear / 4) - (userYear / 100) + (userYear / 400) + 2;
+	 //myDayofWeek = myDayofWeek - 2490;
+	 
 
+	 printf("The day of the week is %d.", myDayofWeek);
 /*
 	printf("%d", userDay + 2 * userMonth + (int)(.6 *(userMonth + 1)) + userYear + (userYear / 4) - (userYear / 100) + (userYear / 400) + 2);
 
