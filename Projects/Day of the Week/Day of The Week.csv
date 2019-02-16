@@ -1,0 +1,18 @@
+Day of The Week\Day of the Week.cpp,19,style,The scope of the variable 'isLeapYear' can be reduced.
+Day of The Week\Day of the Week.cpp,26,style,The scope of the variable 'daysFebuary' can be reduced.
+Day of The Week\Day of the Week.cpp,20,style,Variable 'numDaysMonth' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,21,style,Variable 'dayOfWeek' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,85,style,Variable 'daysFebuary' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,37,style,Variable 'MONTH_JANUARY' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,38,style,Variable 'MONTH_FEBUARY' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,39,style,Variable 'MONTH_MARCH' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,40,style,Variable 'MONTH_APRIL' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,41,style,Variable 'MONTH_MAY' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,42,style,Variable 'MONTH_JUNE' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,43,style,Variable 'MONTH_JULY' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,44,style,Variable 'MONTH_AUGEST' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,45,style,Variable 'MONTH_SEPTEMBER' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,46,style,Variable 'MONTH_OCTOBER' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,47,style,Variable 'MONTH_NOVEMBER' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,48,style,Variable 'MONTH_DECEMBER' is assigned a value that is never used.
+Day of The Week\Day of the Week.cpp,84,error,Uninitialized variable: isLeapYear

@@ -1,11 +1,11 @@
-
+﻿
 //---------------------------------------------------------------------------------------
 // Programmer:		Jonathan Trent Patterson
 // Date:			2/3/2019
 // Program Name:	Day of the Week
 // Chapter:			Chapter 3 - Decisions  
-// Description:		2 complete English sentences describing what the program does,
-//					algorithm used, etc.
+// Description:		This program gets input from user and outputs day of the week.
+//					It takes into consideration of leap years.
 
 #define _CRT_SECURE_NO_WARNINGS // Disable warnings (and errors) when using non-secure versions of printf, scanf, strcpy, etc.
 #include <stdio.h> // Needed for working with printf and scanf
@@ -48,25 +48,35 @@ int main(void)
 	const int MONTH_NOVEMBER = 11;
 	const int MONTH_DECEMBER = 12;
 
+	int weekday = (userDay += userMonth < 3 ? userYear-- : userYear - 2, 23 * userMonth / 9 + userDay + 4 + userYear / 4 - userYear / 100 + userYear / 400) % 7;
 	// *** Your program goes here ***
 
 
-	enum days {
+	enum daysMonth {
 		DAYS_JANUARY = 31,
 		DAYS_FEBUARY = 28,
 		DAYS_FEBUARY_LEAP = 29,
 		DAYS_MARCH = 31,
 		DAYS_APRIL = 30,
-		DAYS_MAY = 0,
-		DAYS_JUNE = 0,
-		DAYS_JULY = 0,
-		DAYS_AUGEST = 0,
-		DAYS_SEPTEMBER = 0,
-		DAYS_OCTOBER = 0,
-		DAYS_NOVEMBER = 0,
-		DAYS_DECEMBER = 0
+		DAYS_MAY = 31,
+		DAYS_JUNE = 30,
+		DAYS_JULY = 31,
+		DAYS_AUGEST = 31,
+		DAYS_SEPTEMBER = 30,
+		DAYS_OCTOBER = 31,
+		DAYS_NOVEMBER = 30,
+		DAYS_DECEMBER = 31
 	};
-
+	
+	enum daysWeek {
+		DAY_SUNDAY = 0,
+		DAY_MONDAY = 1,
+		DAY_TUESDAY = 2,
+		DAY_WEDNESDAY = 3,
+		DAY_THURSDAY = 4,
+		DAY_FRIDAY = 5,
+		DAY_SATURDAY = 6
+	};
 
 	printf("Enter a year (after 1582): ");
 	scanf("%d", &userYear);
@@ -114,8 +124,64 @@ int main(void)
 	 myDayofWeek = userDay + 2 * userMonth + (int)(.6 *(userMonth + 1)) + userYear + (userYear / 4) - (userYear / 100) + (userYear / 400) + 2;
 	 //myDayofWeek = myDayofWeek - 2490;
 	 
+	 weekday = (int)weekday;
+	 myDayofWeek = (myDayofWeek % 7);
+	 //printf("The day of the week is %d.", myDayofWeek);
+	 //printf("\n");
+	 //printf("The day of the week is %d.", weekday);
 
-	 printf("The day of the week is %d.", myDayofWeek);
+	 printf("");
+	 
+	 //Determine if it is a leap year
+
+	 if ((userYear % 400) == 0) {
+		 isLeapYear = true;
+	 }
+	 if ((userYear % 100) == 0) {
+		 isLeapYear = false;
+	 }
+	 if ((userYear % 4) == 0) {
+		 isLeapYear = true;
+	 }
+	 
+
+	 if (isLeapYear == true) {
+		 myDayofWeek = myDayofWeek + 1; // If its a leap year add only 1 day
+	 }
+	 else {
+		 myDayofWeek = myDayofWeek + 2; // If its not a leap year add 2 days (not sure why this)
+	 }
+
+	 printf("\n"); //blank line
+
+	 switch (myDayofWeek)
+	 {
+	 case 0:
+		 printf("The day of the week was %s.", "Sunday" /*DAY_SUNDAY*/);
+		 break;
+	 case 1:
+		 printf("The day of the week was %s.", "Monday" /*DAY_MONDAY*/);
+		 break;
+	 case 2:
+		 printf("The day of the week was %s.", "Tuesday" /*DAY_TUESDAY*/);
+		 break;
+	 case 3:
+		 printf("The day of the week was %s.", "Wednesday" /*DAY_WEDNESDAY*/);
+		 break;
+	 case 4:
+		 printf("The day of the week was %s.", "Thursday" /*DAY_THURSDAY*/);
+		 break;
+	 case 5:
+		 printf("The day of the week was %s.", "Friday" /*DAY_FRIDAY*/);
+		 break;
+	 case 6:
+		 printf("The day of the week was %s.", "Saturday" /*DAY_SATURDAY*/);
+		 break;
+
+	 default:
+		 printf("Invalid : Something is wrong here!");
+		 break;
+	 }
 /*
 	printf("%d", userDay + 2 * userMonth + (int)(.6 *(userMonth + 1)) + userYear + (userYear / 4) - (userYear / 100) + (userYear / 400) + 2);
 

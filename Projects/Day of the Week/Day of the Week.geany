@@ -20,6 +20,7 @@ indent_mode=2
 [project]
 name=Day of The Week
 base_path=\\Day of The Week\\
+description=
 
 [long line marker]
 long_line_behaviour=1
@@ -27,4 +28,4 @@ long_line_column=72
 
 [files]
 current_page=0
-FILE_NAME_0=0;C++;0;EUTF-8;1;1;0;C%3A%5CUsers%5Cjtren%5Cgit%5CCPT-234-001%5CProjects%5CDay%20of%20The%20Week%5CDay%20of%20The%20Week%5CDay%20of%20the%20Week.cpp;0;4
+FILE_NAME_0=4909;C++;0;EUTF-8;1;1;0;C%3A%5CUsers%5Cjtren%5Cgit%5CCPT-234-001%5CProjects%5CDay%20of%20The%20Week%5CDay%20of%20The%20Week%5CDay%20of%20the%20Week.cpp;0;4

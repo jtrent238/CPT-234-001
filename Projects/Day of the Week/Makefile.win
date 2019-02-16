@@ -4,8 +4,9 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = "Day\ of\ The\ Week/Day\ of\ the\ Week.o"
-LINKOBJ  = "Day of The Week/Day of the Week.o"
+RES      = Day_of_The_Week.geany_private.res
+OBJ      = "Day\ of\ The\ Week/Day\ of\ the\ Week.o" $(RES)
+LINKOBJ  = "Day of The Week/Day of the Week.o" $(RES)
 LIBS     = -L"D:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib" -L"D:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -pg
 INCS     = -I"D:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/include" -I"D:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"D:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/include" -I"D:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -26,3 +27,7 @@ $(BIN): $(OBJ)
 
 "Day\ of\ The\ Week/Day\ of\ the\ Week.o": Day\ of\ The\ Week/Day\ of\ the\ Week.cpp
 	$(CPP) -c "Day of The Week/Day of the Week.cpp" -o "Day of The Week/Day of the Week.o" $(CXXFLAGS)
+
+Day_of_The_Week.geany_private.res: Day_of_The_Week.geany_private.rc 
+	$(WINDRES) -i Day_of_The_Week.geany_private.rc --input-format=rc -o Day_of_The_Week.geany_private.res -O coff 
+
