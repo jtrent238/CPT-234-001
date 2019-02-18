@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3830123932">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="11"/>
+    <functioncall functionName="MAX_NUMBER"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="scanf"/>
+    <functioncall functionName="userNum"/>
+    <functioncall functionName="userNum2"/>
+    <functioncall functionName="userNum3"/>
+    <functioncall functionName="while"/>
+  </FileInfo>
+</analyzerinfo>

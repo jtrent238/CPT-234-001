@@ -1,0 +1,33 @@
+# Project: C to F Table
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = C_to_F_Table_private.res
+OBJ      = "C\ to\ F\ Table/C\ to\ F\ Table.o" $(RES)
+LINKOBJ  = "C to F Table/C to F Table.o" $(RES)
+LIBS     = -L"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib" -L"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/include" -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/include" -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = "C to F Table.exe"
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+"C\ to\ F\ Table/C\ to\ F\ Table.o": C\ to\ F\ Table/C\ to\ F\ Table.cpp
+	$(CC) -c "C to F Table/C to F Table.cpp" -o "C to F Table/C to F Table.o" $(CFLAGS)
+
+C_to_F_Table_private.res: C_to_F_Table_private.rc 
+	$(WINDRES) -i C_to_F_Table_private.rc --input-format=rc -o C_to_F_Table_private.res -O coff 
+

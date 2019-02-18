@@ -1,0 +1,4 @@
+Histogram.a1:Debug|Win32:E:/Documents/git/CPT-234-001/Projects/Histogram/Histogram/Histogram.cpp
+Histogram.a2:Release|Win32:E:/Documents/git/CPT-234-001/Projects/Histogram/Histogram/Histogram.cpp
+Histogram.a3:Debug|x64:E:/Documents/git/CPT-234-001/Projects/Histogram/Histogram/Histogram.cpp
+Histogram.a4:Release|x64:E:/Documents/git/CPT-234-001/Projects/Histogram/Histogram/Histogram.cpp

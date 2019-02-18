@@ -1,0 +1,4 @@
+C to F Table.a1:Debug|Win32:E:/Documents/git/CPT-234-001/Projects/C to F Table/C to F Table/C to F Table.cpp
+C to F Table.a2:Release|Win32:E:/Documents/git/CPT-234-001/Projects/C to F Table/C to F Table/C to F Table.cpp
+C to F Table.a3:Debug|x64:E:/Documents/git/CPT-234-001/Projects/C to F Table/C to F Table/C to F Table.cpp
+C to F Table.a4:Release|x64:E:/Documents/git/CPT-234-001/Projects/C to F Table/C to F Table/C to F Table.cpp

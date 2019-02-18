@@ -1,0 +1,2 @@
+C to F Table\C to F Table.cpp,37,style,Variable 'centigradeTemp' is reassigned a value before the old one has been used.
+C to F Table\C to F Table.cpp,24,style,The scope of the variable 'fahrenheitTemp' can be reduced.
