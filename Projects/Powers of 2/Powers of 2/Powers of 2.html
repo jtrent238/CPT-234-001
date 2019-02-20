@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Powers of 2.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="SynEdit HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #293134; }
+.cpp1-assembler { color: #93C763; }
+.cpp1-character { color: #FF8409; }
+.cpp1-comment { color: #66747B; font-style: italic; }
+.cpp1-float { color: #FFCD22; }
+.cpp1-hexadecimal { color: #FFCD22; }
+.cpp1-identifier { color: #E0E2E4; }
+.cpp1-illegalchar { color: #FB0000; }
+.cpp1-number { color: #FFCD22; }
+.cpp1-octal { color: #FFCD22; }
+.cpp1-preprocessor { color: #A082BD; }
+.cpp1-reservedword { color: #678CB1; }
+.cpp1-space { background-color: #293134; }
+.cpp1-string { color: #EC7600; }
+.cpp1-symbol { color: #E8E2B7; }
+-->
+</style>
+</head>
+<body>
+<pre>
+<code><span style="font: 10pt Consolas;"><span class="cpp1-comment">// Programmer:		Blake Bolin, Jonathan Trent Patterson
+// Date:			2/20/2019
+// Program Name:	Powers of 2
+// Chapter:			Chapter # - Repetitions
+// Description:		This program askes for a number between 1 and 20 in order to see how many times two is to the power too.
+//					The program uses a loop to calculate powers of 2.
+
+</span><span class="cpp1-preprocessor">#define _CRT_SECURE_NO_WARNINGS </span><span class="cpp1-comment">// Disable warnings (and errors) when using non-secure versions of printf, scanf, strcpy, etc.
+</span><span class="cpp1-preprocessor">#include &lt;stdio.h&gt; </span><span class="cpp1-comment">// Needed for working with printf and scanf
+</span><span class="cpp1-preprocessor">#include &lt;math.h&gt; </span><span class="cpp1-comment">// for pow
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">main</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">void</span><span class="cpp1-symbol">)
+{
+</span><span class="cpp1-space">	</span><span class="cpp1-comment">// Constant and Variable Declarations
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">const</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">MIN_NUM</span><span class="cpp1-space"> </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">1</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">const</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">MAX_NUM</span><span class="cpp1-space"> </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">20</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">num1</span><span class="cpp1-space"> </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">loopCounter</span><span class="cpp1-space"> </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">powerTwo</span><span class="cpp1-space"> </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">1</span><span class="cpp1-symbol">;
+
+
+
+</span><span class="cpp1-space">	</span><span class="cpp1-comment">// *** Your program goes here ***
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Enter an integer (between %d and %d): &quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">MIN_NUM</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">MAX_NUM</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">scanf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;%d&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-symbol">&amp;</span><span class="cpp1-identifier">num1</span><span class="cpp1-symbol">);
+
+</span><span class="cpp1-space">	</span><span class="cpp1-comment">//determine if the number user is a valid user
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">while</span><span class="cpp1-space"> </span><span class="cpp1-symbol">((</span><span class="cpp1-identifier">num1</span><span class="cpp1-space"> </span><span class="cpp1-symbol">&lt;</span><span class="cpp1-space"> </span><span class="cpp1-identifier">MIN_NUM</span><span class="cpp1-space"> </span><span class="cpp1-symbol">||</span><span class="cpp1-space"> </span><span class="cpp1-identifier">num1</span><span class="cpp1-space"> </span><span class="cpp1-symbol">&gt;</span><span class="cpp1-space"> </span><span class="cpp1-identifier">MAX_NUM</span><span class="cpp1-symbol">))</span><span class="cpp1-space"> </span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;The integer entered, %d, is not in the range of %d to %d.\n&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">num1</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">MIN_NUM</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">MAX_NUM</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Please re-enter the integer: &quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">scanf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;%d&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-symbol">&amp;</span><span class="cpp1-identifier">num1</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;\n&quot;</span><span class="cpp1-symbol">);</span><span class="cpp1-space"> </span><span class="cpp1-comment">// Blank line
+
+</span><span class="cpp1-space">	</span><span class="cpp1-comment">// prints the output
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">for</span><span class="cpp1-space"> </span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">loopCounter</span><span class="cpp1-space"> </span><span class="cpp1-symbol">=</span><span class="cpp1-space"> </span><span class="cpp1-number">1</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> </span><span class="cpp1-identifier">loopCounter</span><span class="cpp1-space"> </span><span class="cpp1-symbol">&lt;=</span><span class="cpp1-space"> </span><span class="cpp1-identifier">num1</span><span class="cpp1-symbol">;</span><span class="cpp1-space"> </span><span class="cpp1-identifier">loopCounter</span><span class="cpp1-symbol">++)</span><span class="cpp1-space"> </span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">powerTwo</span><span class="cpp1-space"> </span><span class="cpp1-symbol">*=</span><span class="cpp1-space"> </span><span class="cpp1-number">2</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;2^%d = %d\n&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">loopCounter</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">powerTwo</span><span class="cpp1-symbol">);
+
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}
+
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;\n&quot;</span><span class="cpp1-symbol">);</span><span class="cpp1-space"> </span><span class="cpp1-comment">//blank line
+
+
+
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">return</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+}</span><span class="cpp1-space"> </span><span class="cpp1-comment">// end main()
+</span></span>
+</code></pre>
+</body>
+</html>

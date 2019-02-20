@@ -18,9 +18,8 @@ detect_indent_width=false
 indent_mode=2
 
 [project]
-name=https://github.com/jtrent238/OreSpawnDzPort
+name=Powers of 2
 base_path=\\
-description=
 
 [long line marker]
 long_line_behaviour=1
@@ -28,4 +27,4 @@ long_line_column=72
 
 [files]
 current_page=0
-FILE_NAME_0=1075;C++;0;EUTF-8;1;1;0;E%3A%5CDocuments%5Cgit%5CCPT-234-001%5CProjects%5CHistogram%5CHistogram%5CHistogram.cpp;0;4
+FILE_NAME_0=1174;C++;0;EUTF-8;1;1;0;E%3A%5CDocuments%5Cgit%5CCPT-234-001%5CProjects%5CPowers%20of%202%5CPowers%20of%202%5CPowers%20of%202.cpp;0;4

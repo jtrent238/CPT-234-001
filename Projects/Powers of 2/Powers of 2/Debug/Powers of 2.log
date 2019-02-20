@@ -1,4 +1,2 @@
 ﻿  Powers of 2.cpp
-e:\documents\git\cpt-234-001\projects\powers of 2\powers of 2\powers of 2.cpp(28): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'double'
-e:\documents\git\cpt-234-001\projects\powers of 2\powers of 2\powers of 2.cpp(38): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'double'
   Powers of 2.vcxproj -> E:\Documents\git\CPT-234-001\Projects\Powers of 2\Debug\Powers of 2.exe

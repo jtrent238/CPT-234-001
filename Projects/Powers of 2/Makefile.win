@@ -1,0 +1,33 @@
+# Project: Powers of 2
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = Powers_of_2_private.res
+OBJ      = "Powers\ of\ 2/Powers\ of\ 2.o" $(RES)
+LINKOBJ  = "Powers of 2/Powers of 2.o" $(RES)
+LIBS     = -L"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib" -L"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/include" -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/include" -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"E:/PortableApps/OrwellDev-CppPortable/App/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = "Powers of 2.exe"
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+"Powers\ of\ 2/Powers\ of\ 2.o": Powers\ of\ 2/Powers\ of\ 2.cpp
+	$(CPP) -c "Powers of 2/Powers of 2.cpp" -o "Powers of 2/Powers of 2.o" $(CXXFLAGS)
+
+Powers_of_2_private.res: Powers_of_2_private.rc 
+	$(WINDRES) -i Powers_of_2_private.rc --input-format=rc -o Powers_of_2_private.res -O coff 
+

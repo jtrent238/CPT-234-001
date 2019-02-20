@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3694734531">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="11"/>
+    <functioncall functionName="MAX_NUM"/>
+    <functioncall functionName="MIN_NUM"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="loopCounter"/>
+    <functioncall functionName="num1"/>
+    <functioncall functionName="powerTwo"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="scanf"/>
+    <functioncall functionName="while"/>
+  </FileInfo>
+</analyzerinfo>
