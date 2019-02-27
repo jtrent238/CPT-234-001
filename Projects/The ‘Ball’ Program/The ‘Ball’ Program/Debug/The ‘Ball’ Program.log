@@ -1,0 +1,4 @@
+﻿  The ‘Ball’ Program.cpp
+c:\users\jtren\git\cpt-234-001\projects\the ‘ball’ program\the ‘ball’ program\the ‘ball’ program.cpp(59): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+c:\users\jtren\git\cpt-234-001\projects\the ‘ball’ program\the ‘ball’ program\the ‘ball’ program.cpp(61): warning C4477: 'printf' : format string '%.1lf' requires an argument of type 'double', but variadic argument 2 has type 'int'
+  The ‘Ball’ Program.vcxproj -> C:\Users\jtren\git\CPT-234-001\Projects\The ‘Ball’ Program\Debug\The ‘Ball’ Program.exe
