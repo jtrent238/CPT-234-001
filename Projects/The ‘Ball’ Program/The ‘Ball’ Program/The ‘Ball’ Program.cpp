@@ -2,8 +2,8 @@
 // Date:			3/1/2019
 // Program Name:	The Ball Program
 // Chapter:			Chapter 4 - Repetition
-// Description:		2 complete English sentences describing what the program does,
-//					algorithm used, etc.
+// Description:		This program displays info of a ball that is thrown staight up into the air.
+//					It ask the user for initial height and veloicity then caculates the info and displays it in a table.
 
 #define _CRT_SECURE_NO_WARNINGS // Disable warnings (and errors) when using non-secure versions of printf, scanf, strcpy, etc.
 #include <stdio.h> // Needed for working with printf and scanf
@@ -36,6 +36,7 @@ int main(void)
 
 	// *** INPUT SECTION ***
 
+	// prompt user for height
 	printf("Enter the initial height of the ball(in ft.) : ");
 	scanf("%d", &initialHeight);
 
@@ -48,6 +49,7 @@ int main(void)
 
 	}
 
+	// prompt user for velocity
 	printf("Enter the initial velocity of the ball (in ft. per sec.): ");
 	scanf("%d", &initialVelocity);
 
@@ -67,6 +69,7 @@ int main(void)
 	// caculate max height
 	maxHeight = initialHeight + (initialVelocity * heightTime) - (16 * heightTime * heightTime);
 
+	// check to see if ball hight and velocity is more than zero
 	if (initialHeight > NUM_ZERO || initialVelocity > NUM_ZERO) {
 		while (currentHeight > NUM_ZERO) {
 			ballTime += 0.1;
@@ -74,32 +77,35 @@ int main(void)
 		}
 	}
 	
-	printf("The maximum height the ball will reach is %.1lf feet.", ballFeet);
-	printf("The time for the ball to reach the ground is %.1lf seconds.", ballSeconds);
-
 	printf("\n"); //blank line
-	printf("\n"); //blank line
-
-	printf("Time" "\t" "Height" "\n");
 
 	// Increment Start time
 	startTime += 0.25;
+	currentHeight = initialHeight + (initialVelocity * startTime) - (16 * startTime * startTime);
 
-	while (currentHeight > NUM_ZERO) {
-		printf("%.2lf" "\t" "%.1lf" "\n", startTime, currentHeight);
+	while (ballTime > NUM_ZERO) {
+		//printf("%.2lf" "\t" "%.1lf" "\n", startTime, currentHeight);
 		startTime += 0.25;
-		currentHeight = initialHeight + (initialVelocity * startTime) - (NUM_SIXTEEN * startTime * startTime);
+	}
+	
+	// prints info about the ball
+	printf("The maximum height the ball will reach is %.1lf feet. " "\n", maxHeight);
+	printf("The time for the ball to reach the ground is %.1lf seconds.", startTime);
+
+	printf("\n"); //blank line
+	printf("\n"); //blank line
+
+	printf("Time" "\t" "Height" "\n"); // prints header
+
+	printf("%.2lf" "\t" "%.1lf" "\n", ballTime, NUM_ZERO); // prints zero to table
+	
+	// prints the table
+	while (currentHeight > NUM_ZERO) {
+		printf("%.2lf" "\t" "%.1lf" "\n", startTime, currentHeight); // prints data to table
+		startTime += 0.25; // add to start time
+		currentHeight = initialHeight + (initialVelocity * startTime) - (NUM_SIXTEEN * startTime * startTime); // formula for currentheight
 	}
 
-	printf("%.2lf" "\t" "%.1lf" "\n", ballTime, NUM_ZERO);
-
-	if (currentHeight == 0 && initialVelocity == 0) {
-		printf("The maximum height the ball will reach is %.1lf feet.\n", maxHeight);
-		printf("The time for the ball to reach the ground is %.1lf seconds.\n", ballTime);
-		printf("\n"); //blank line
-		printf("Time" "\t" "Height" "\n");
-		printf("%.2lf" "\t" "%.1lf" "\n", ballTime , NUM_ZERO);
-	}
 
 	// Do not touch below...
 

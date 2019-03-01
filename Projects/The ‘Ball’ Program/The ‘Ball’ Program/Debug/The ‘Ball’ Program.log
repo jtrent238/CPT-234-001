@@ -1,8 +1,5 @@
 ﻿  The ‘Ball’ Program.cpp
 c:\users\jtren\git\cpt-234-001\projects\the ‘ball’ program\the ‘ball’ program\the ‘ball’ program.cpp(72): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-c:\users\jtren\git\cpt-234-001\projects\the ‘ball’ program\the ‘ball’ program\the ‘ball’ program.cpp(94): warning C4477: 'printf' : format string '%.2lf' requires an argument of type 'double', but variadic argument 1 has type 'int'
-c:\users\jtren\git\cpt-234-001\projects\the ‘ball’ program\the ‘ball’ program\the ‘ball’ program.cpp(94): warning C4477: 'printf' : format string '%.1lf' requires an argument of type 'double', but variadic argument 2 has type 'const int'
-c:\users\jtren\git\cpt-234-001\projects\the ‘ball’ program\the ‘ball’ program\the ‘ball’ program.cpp(98): warning C4477: 'printf' : format string '%.1lf' requires an argument of type 'double', but variadic argument 1 has type 'int'
-c:\users\jtren\git\cpt-234-001\projects\the ‘ball’ program\the ‘ball’ program\the ‘ball’ program.cpp(101): warning C4477: 'printf' : format string '%.2lf' requires an argument of type 'double', but variadic argument 1 has type 'int'
-c:\users\jtren\git\cpt-234-001\projects\the ‘ball’ program\the ‘ball’ program\the ‘ball’ program.cpp(101): warning C4477: 'printf' : format string '%.1lf' requires an argument of type 'double', but variadic argument 2 has type 'const int'
+c:\users\jtren\git\cpt-234-001\projects\the ‘ball’ program\the ‘ball’ program\the ‘ball’ program.cpp(96): warning C4477: 'printf' : format string '%.2lf' requires an argument of type 'double', but variadic argument 1 has type 'int'
+c:\users\jtren\git\cpt-234-001\projects\the ‘ball’ program\the ‘ball’ program\the ‘ball’ program.cpp(96): warning C4477: 'printf' : format string '%.1lf' requires an argument of type 'double', but variadic argument 2 has type 'const int'
   The ‘Ball’ Program.vcxproj -> C:\Users\jtren\git\CPT-234-001\Projects\The ‘Ball’ Program\Debug\The ‘Ball’ Program.exe
