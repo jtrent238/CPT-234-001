@@ -17,25 +17,25 @@ int main(void)
 	const int STRING_SIZE = 10;
 
 	// Arrays to hold the names of the months and the number of days in each montc
-	char monthNames[ARRAY_SIZE][STRING_SIZE];
-	int numOfDays[ARRAY_SIZE]; // Once the size of the array has been defined, it cannot be changed while the program is running
+	char monthNames[ARRAY_SIZE][STRING_SIZE] = { "January", "Febuary", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December" };
+	int numOfDays[ARRAY_SIZE] = { 31, 28, 31, 30, 31, 30, 31 ,31, 30 ,31, 30, 31 }; // Once the size of the array has been defined, it cannot be changed while the program is running
 	int i = 0; // for loop counter (also used in initializing the arrays);
 
 	// *** Your program goes here ***
 
 	// Populate the arrays
-	strcpy(monthNames[i], "January");	numOfDays[i] = 31; i++;
-	strcpy(monthNames[i], "Febuary");	numOfDays[i] = 28; i++;
-	strcpy(monthNames[i], "March");		numOfDays[i] = 31; i++;
-	strcpy(monthNames[i], "April");		numOfDays[i] = 30; i++;
-	strcpy(monthNames[i], "May");		numOfDays[i] = 31; i++;
-	strcpy(monthNames[i], "June");		numOfDays[i] = 30; i++;
-	strcpy(monthNames[i], "July");		numOfDays[i] = 31; i++;
-	strcpy(monthNames[i], "Augest");	numOfDays[i] = 31; i++;
-	strcpy(monthNames[i], "September"); numOfDays[i] = 30; i++;
-	strcpy(monthNames[i], "October");	numOfDays[i] = 31; i++;
-	strcpy(monthNames[i], "November");	numOfDays[i] = 30; i++;
-	strcpy(monthNames[i], "December");	numOfDays[i] = 31; i++;
+	strcpy(monthNames[i], "January");	/*numOfDays[i] = 31;*/ i++;
+	strcpy(monthNames[i], "Febuary");	/*numOfDays[i] = 28;*/ i++;
+	strcpy(monthNames[i], "March");		/*numOfDays[i] = 31;*/ i++;
+	strcpy(monthNames[i], "April");		/*numOfDays[i] = 30;*/ i++;
+	strcpy(monthNames[i], "May");		/*numOfDays[i] = 31;*/ i++;
+	strcpy(monthNames[i], "June");		/*numOfDays[i] = 30;*/ i++;
+	strcpy(monthNames[i], "July");		/*numOfDays[i] = 31;*/ i++;
+	strcpy(monthNames[i], "Augest");	/*numOfDays[i] = 31;*/ i++;
+	strcpy(monthNames[i], "September"); /*numOfDays[i] = 30;*/ i++;
+	strcpy(monthNames[i], "October");	/*numOfDays[i] = 31;*/ i++;
+	strcpy(monthNames[i], "November");	/*numOfDays[i] = 30;*/ i++;
+	strcpy(monthNames[i], "December");	/*numOfDays[i] = 31;*/ i++;
 
 
 	// Display the beginning line
