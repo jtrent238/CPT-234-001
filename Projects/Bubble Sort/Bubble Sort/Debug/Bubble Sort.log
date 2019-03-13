@@ -1,0 +1,3 @@
+﻿  Bubble Sort.cpp
+e:\documents\git\cpt-234-001\projects\bubble sort\bubble sort\bubble sort.cpp(51): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Bubble Sort.vcxproj -> E:\Documents\git\CPT-234-001\Projects\Bubble Sort\Debug\Bubble Sort.exe
