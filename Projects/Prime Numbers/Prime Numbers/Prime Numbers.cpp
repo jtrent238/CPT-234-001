@@ -20,7 +20,7 @@ int main(void)
 	printf("enter 'X' (an integer greater than 2): ");
 	scanf("%d", &userNum);
 
-	while (userNum < 2)   // This while loop makes sure the number is greater than two. 
+	while (userNum <= 2)   // This while loop makes sure the number is greater than two. 
 	{
 		printf("   The number entered, %d, is not greater than 2.\n", userNum);
 		printf("   Please re-enter an integer greater than 2: ");                // If the number is not greater than two, the user is asked to enter a number again.

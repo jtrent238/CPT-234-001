@@ -1,0 +1,3 @@
+﻿  MyToUpper.cpp
+c:\users\admin\git\cpt-234-001\projects\mytoupper\mytoupper\mytoupper.cpp(22): warning C4101: 'myNewString': unreferenced local variable
+  MyToUpper.vcxproj -> C:\Users\Admin\git\CPT-234-001\Projects\MyToUpper\Debug\MyToUpper.exe
