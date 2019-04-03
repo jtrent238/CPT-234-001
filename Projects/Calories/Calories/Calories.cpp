@@ -11,9 +11,10 @@
 // Function Prototypes
 int GetInt(const char PROMPT_TEXT[]);
 int CalcFatCals(int fatGrams);
-int CalcCarbsCals(int carbsGrams);
+int CalcCarbCals(int carbsGrams);
 int CalcProteinCals(int proteinGrams);
 void MyCalOutput(const char TYPE_NAME, int typeGrams, int typeCals);
+void MyFinalOutput(int totalCals);
 
 int main(void)
 {
@@ -23,6 +24,9 @@ int main(void)
 	const char FAT_PROMPT[] = "Enter the number of fat grams in your meal : ";
 	const char CAR_PROMPT[] = "Enter the number of carbohydrate grams in your meal : ";
 	const char PROTEIN_PROMPT[] = "Enter the number of protein grams in your meal : ";
+	const char FAT_WORD[] = "fat";
+	const char CARB_WORD[] = "carbohydrate";
+	const char PROTEIN_WORD[] = "protein";
 
 	// Input Variables
 	int fatGrams = 0;
@@ -50,6 +54,13 @@ int main(void)
 
 	// *** PROCESSING ***
 	fatGrams = CalcFatCals(fatGrams);
+	carbCals = CalcCarbCals(carbGrams);
+	proteinCals = CalcProteinCals(proteinGrams);
+
+	// *** OUTPUT ***
+	MyCalOutput(FAT_WORD, fatGrams, fatCals);
+	MyCalOutput(CARB_WORD, carbGrams, fatCals);
+	MyCalOutput(PROTEIN_WORD, proteinGrams, fatCals);
 
 	//printf("The number of calories from the %d fat gram consumed is 9 calories." "\n", fatGrams);
 	//printf("The number of calories from the %d carbohydrate gram consumed is 4 calories." "\n", carbohydrateGrams);
@@ -79,6 +90,7 @@ int GetInt(const char PROMPT_TEXT[]) {
 	// and should not display output
 	// (the answer should be returned to the program that invoked the function)
 
+	// Fat Calories Calculation
 int CalcFatCals(int fatGrams) {
 	// Caculate (and return the number of fat calories based on the fat grams passed
 
@@ -88,6 +100,7 @@ int CalcFatCals(int fatGrams) {
 	return fatGrams * FAT_CALS;
 } // end CalcFatCals function
 
+	// Carbohydrate Calories Calculation
 int CalcCarbsCals(int carbsGrams) {
 	// Caculate (and return the number of fat calories based on the fat grams passed
 
@@ -97,6 +110,7 @@ int CalcCarbsCals(int carbsGrams) {
 	return carbsGrams * CARBS_CALS;
 } // end CalcCarbCals function
 
+	// Protein Calories Calculation
 int CalcProteinCals(int proteinGrams) {
 	// Caculate (and return the number of fat calories based on the fat grams passed
 
@@ -113,5 +127,15 @@ void MyCalOutput(const char TYPE_NAME, int typeGrams, int typeCals) {
 
 	printf("The number of calories from the %d %s gram", typeGrams, TYPE_NAME);
 	if (typeGrams != 1) printf("s"); // Singular/Plural decison
-	printf(" consummed is %d ");
-}
+	printf(" consummed is %d calories." "\n", typeCals);
+
+	return; // void functions return nothing - return is not even needed
+} // end MyCalcOutput function
+
+void MyFinalOutput(int totalCals) {
+	// Dispaly the total number of calories (and additiona text)
+
+	printf("The total number of calories consumed is %d calories." "\n", totalCals);
+
+	return; // void functions return nothing - return is not even needed
+} // end MyFinalOutput function
