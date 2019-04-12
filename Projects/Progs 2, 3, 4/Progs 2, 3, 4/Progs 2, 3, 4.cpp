@@ -7,7 +7,8 @@
 #define _CRT_SECURE_NO_WARNINGS // Disable warnings (and errors) when using non-secure versions of printf, scanf, strcpy, etc.
 #include <stdio.h> // Needed for working with printf and scanf
 
-void DisplayMenu(int userChoice);
+int DisplayMenu(int menuChoice);
+void RunProgram(int menuChoice);
 void TipTaxTotal();
 void MinutesHoursDays();
 void CaloriesBurned();
@@ -17,25 +18,9 @@ int main(void)
 	// Constant and Variable Declarations
 
 	int userChoice = 0;
+	int menuChoice = userChoice;
 
 	// *** Your program goes here ***
-		
-	// Checks to see if user entered a valid number (2, 3, 4, or -1)
-		while (userChoice != -1) {
-			if (userChoice < 2 || userChoice > 4) {
-				DisplayMenu(userChoice);
-			}
-			else {
-				DisplayMenu(userChoice);
-			}
-		}
-
-		printf("\n"); // Blank Line
-
-	return 0;
-} // end main()
-
-void DisplayMenu(int userChoice) {
 	printf("   Progs 2, 3, 4 Menu" "\n");
 	printf("------------------------" "\n");
 	printf("2 - Tip, Tax, Total" "\n");
@@ -47,25 +32,71 @@ void DisplayMenu(int userChoice) {
 	printf("Enter a choice(-1 to quit) : ");
 	scanf("%d", &userChoice);
 
+	// ** The main Program ***
+
+	menuChoice = DisplayMenu(menuChoice); //Display the menu and get the choice
+	while (menuChoice >= 0) {
+		RunProgram(menuChoice); // run the choisen program
+		printf("\n"); // Blank Line
+		menuChoice = DisplayMenu(menuChoice); // and re-display the menu
+	}
+
+	printf("Good bye!" "\n");
+
+	// Checks to see if user entered a valid number (2, 3, 4, or -1)
+	//do {
+	//		DisplayMenu(userChoice);
+	//		if (userChoice == -1) {
+	//			printf("Good Bye!");
+	//		}
+
+	//		if (userChoice < 2 || userChoice > 4 || userChoice != -1) {
+	//			DisplayMenu(userChoice);
+	//		} else {
+	//			DisplayMenu(userChoice);
+	//		}	
+	//	} while (userChoice > -1);
+
+		printf("\n"); // Blank Line
+
+	return 0;
+} // end main()
+
+int DisplayMenu(int userChoice) {
+
 	printf("\n"); // Blank Line
 
-	// Switch to the userChoice
-	switch (userChoice) {
-	case 2:
-		TipTaxTotal();
-		printf("\n"); // Blank Line
-		break;
-	case 3:
-		MinutesHoursDays();
-		printf("\n"); // Blank Line
-		break;
-	case 4:
-		CaloriesBurned();
-		printf("\n"); // Blank Line
-		break;
-	default:
-		break;
-	}
+	printf("   Progs 2, 3, 4 Menu" "\n");
+	printf("------------------------" "\n");
+	printf("2 - Tip, Tax, Total" "\n");
+	printf("3 - Minutes, Hours, Days" "\n");
+	printf("4 - Calories Burned" "\n");
+
+	printf("\n"); // Blank Line
+
+	printf("Enter a choice(-1 to quit) : ");
+	scanf("%d", &userChoice);
+
+	RunProgram(userChoice);
+}
+
+void RunProgram(int menuChoice) {
+	// Run the chosen program
+	printf("\n"); // Blank Line
+		// Switch to the userChoice
+		switch (menuChoice) {
+		case 2:
+			TipTaxTotal();
+			break;
+		case 3:
+			MinutesHoursDays();
+			break;
+		case 4:
+			CaloriesBurned();
+			break;
+		// All other choices will do nothing
+		}
+		return;
 }
 
 void TipTaxTotal() {

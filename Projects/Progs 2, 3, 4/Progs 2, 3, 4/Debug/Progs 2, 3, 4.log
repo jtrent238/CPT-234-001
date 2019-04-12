@@ -1,4 +1,4 @@
 ﻿  Progs 2, 3, 4.cpp
-c:\users\admin\git\cpt-234-001\projects\progs 2, 3, 4\progs 2, 3, 4\progs 2, 3, 4.cpp(81): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\admin\git\cpt-234-001\projects\progs 2, 3, 4\progs 2, 3, 4\progs 2, 3, 4.cpp(82): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\admin\git\cpt-234-001\projects\progs 2, 3, 4\progs 2, 3, 4\progs 2, 3, 4.cpp(100): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\admin\git\cpt-234-001\projects\progs 2, 3, 4\progs 2, 3, 4\progs 2, 3, 4.cpp(101): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   Progs 2, 3, 4.vcxproj -> C:\Users\Admin\git\CPT-234-001\Projects\Progs 2, 3, 4\Debug\Progs 2, 3, 4.exe

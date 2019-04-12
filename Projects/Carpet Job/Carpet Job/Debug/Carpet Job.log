@@ -1,0 +1,17 @@
+﻿  Carpet Job.cpp
+c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(36): warning C4477: 'scanf' : format string '%lf' requires an argument of type 'double *', but variadic argument 1 has type 'double'
+c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(38): warning C4477: 'scanf' : format string '%lf' requires an argument of type 'double *', but variadic argument 1 has type 'double'
+c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(39): warning C4477: 'scanf' : format string '%lf' requires an argument of type 'double *', but variadic argument 1 has type 'double'
+c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(65): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(65): note: placeholders and their parameters expect 2 variadic arguments, but 0 were provided
+  c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(65): note: the missing variadic argument 1 is required by format string '%.2lf'
+c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(66): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(66): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(66): note: the missing variadic argument 1 is required by format string '%.2lf'
+c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(67): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(67): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(67): note: the missing variadic argument 1 is required by format string '%.2lf'
+c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(68): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(68): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  c:\users\admin\git\cpt-234-001\projects\carpet job\carpet job\carpet job.cpp(68): note: the missing variadic argument 1 is required by format string '%.2lf'
+  Carpet Job.vcxproj -> C:\Users\Admin\git\CPT-234-001\Projects\Carpet Job\Debug\Carpet Job.exe
